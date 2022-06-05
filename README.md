@@ -6,7 +6,7 @@ Antes de explicar como que deve ser usada a API, gostaria de falar que esse desa
 
 ## Vamos para o que interessa, como a API deve ser usada?
 
-1. Baixe o arquivo `fluigcclean-api-0.0.1-SNAPSHOT` que estará na parte principal dos arquivos onde foi upado o projeto.
+1. Baixe o arquivo `fluigcclean-api-0.0.1-SNAPSHOT`(DOWNLOAD: https://univillebr-my.sharepoint.com/:u:/g/personal/luiz_sesna_univille_br/ESAr2_dPGoNGtV8C2xI3g-4Bytlw3ADOglZT5MY5bzQl8Q?e=pLqHSu).
 2. Execute o arquivo no seu cmd atraves do comando `java -jar fluigcclean-api-0.0.1-SNAPSHOT`
 3. Em seguida começará aparecer algumas informações no cmd.
 
