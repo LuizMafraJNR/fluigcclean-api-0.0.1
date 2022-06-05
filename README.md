@@ -1,38 +1,39 @@
-# fluigcclean-api-0.0.1
-Bem vindo ao desafio backend do TOTVS Fluig! Aqui você vai poder nos mostrar um pouquinho do seu estilo como desenvolvedor. Cenário A empresa “Ficticius Clean” atua na entrega de produtos de limpeza. A empresa vem enfrentando grandes problemas para fazer a previsão de gastos com combustível de seus veículos utilizados nas entregas. Para resolver o problema, contratou você para desenvolver uma API Rest.Desafio Criar uma API Rest de cadastro de veículos para armazenar os veículos utilizados pela empresa. 
-O cadastro deverá conter os seguintes dados: 
-  `*Nome 
-  *Marca 
-  *Modelo 
-  *Data de fabricação 
-  *Consumo Médio de combustível dentro de cidade (KM/L) 
-  *Consumo Médio de combustível em rodovias (KM/L) `
-  
-  `dawdawdawdad`
-  Criar uma API para realizar o cálculo de previsão de gastos. Deverá receber como parâmetro as seguintes informações: 
-  `*Preço da gasolina R$ 
-  *Total de km que será percorrido dentro da cidade 
-  *Total de km que será percorrido em rodovias `
-  
-  O retorno deverá ser uma lista ranqueada dos veículos da empresa levando em consideração o valor gasto com combustível. 
-  O retorno deverá ter os seguintes dados: 
-  `*Nome 
-  *Marca 
-  *Modelo  
-  *Ano 
-  *Quantidade de combustível gasto 
-  *Valor total gasto com combustível`
-  
-  Avaliação A avaliação levará em consideração os seguintes critérios: 
-  `*Qualidade de código 
-  *Experiência de usabilidade da API 
-  *Assertividade nos valores calculados Observações 
-  *Deverá ser codificado na linguagem Java 
-  *Não há necessidade de desenvolver conexão com banco de dados 
-  *As tecnologias e frameworks utilizados para o desenvolvimento ficam a seu critério`
-  
-  
-  
-  
-  
-  
+# fluigcclean-api-0.0.1 - Primeira vez fazendo uma API REST
+
+### Primeiramente gostaria de agradecer pela oportunidade que eu tive de chegar até essa etapa do processo, foi realmente algo muito importante para mim chegar até esse momento de fazer essa entrega para vocês. 
+
+Antes de explicar como que deve ser usada a API, gostaria de falar que esse desafio foi um baita desafio para mim, primeiramente pelo simples de eu não saber fazer uma API, eu ainda estava chegando nessa parte do estudo, mas quando eu vi o desafio na quarta, desde esse dia eu dei aquele gás enorme para tentar chegar até a parte do curso em que ensina em si, a fazer uma API. NÃO IREI NEGAR QUE, como eu estudei muita coisa em pouco tempo, as informações pasasram muito rapidas pela minha cabeça e ficaram meias vagas, tive varias dificuldades em desenvolver essa minha primeira API. Vale ressaltar que eu não completei API inteira, faltou a segunda parte dela que era de fazer o calculo dos gastos, eu tinha até criado o método que calcula os gastos, porem eu não consegui implementar esse metodo na API, fui atras de informações no google mas não consegui tirar minha dúvida e por conta disso não consegui concluir 100% API, faltou apenas esse detalhe infelizmente!
+
+## Vamos para o que interessa, como a API deve ser usada?
+
+1. Baixe o arquivo `fluigcclean-api-0.0.1-SNAPSHOT` que estará na parte principal dos arquivos onde foi upado o projeto.
+2. Execute o arquivo no seu cmd atraves do comando `java -jar fluigcclean-api-0.0.1-SNAPSHOT`
+3. Em seguida começará aparecer algumas informações no cmd.
+
+## Vai ser preciso utilizar o Postman para testar nossa API
+1. Abra o postman.
+2. No link HTTP use esse link `http://localhost:8080/carros`.
+3. Logo após ao lado vai estar GET, mude para POST.
+4. Em seguida clique em Body.
+5. Onde estiver `none` mude para `raw`.
+6. Dentro do espaço para escrever cole esse JSON `{
+    "nome":"Jetta",
+    "marca":"Volkswagen",
+    "modelo":"GLI",
+    "dataFabricacao":"12/12/2021",
+    "consumoMedioCidade":10.9,
+    "consumoMedioRodovia":14.7,
+    "precoLitro":6.78,
+    "consumoCidade":10,
+    "consumoRodovia":0
+}`
+7. Caso queira mudar as informações fique a vontade.
+8. Clique em `SEND` para cadastrarmos o veiculo.
+
+
+Logo após ter cadastrado alguns veiculos, será possivel visualizar todos, da seguinte forma:
+1. Mude de POST para GET.
+2. Clique em `SEND`.
+3. Logo em seguida irá aparecer uma lista com todos os veículos cadastrados.
+
+INFELIZMENTE a parte de calcular os gastos eu não consegui implementar na nossa API, eu realmente me esforcei muito para tentar implementar, eu queria de verdade ter conseguido, eu me sentiria bem realizado se eu conseguisse para minha primeira API, mas peço desculpas por não ter alcançado a meta, vou tentar tirar umas duvidas com meus professores e tentar repostar essa API com esse metodo para calcular os gastos.
