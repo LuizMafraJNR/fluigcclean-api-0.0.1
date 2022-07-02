@@ -1,12 +1,9 @@
 package br.com.fluig.clean.repository;
 
-import java.math.BigDecimal;
-import java.util.List;
-
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
-import br.com.fluig.clean.model.Carros;
+import br.com.fluig.clean.model.Carro;
 
 /**
  * Server para conecatar ou passar dados d banco de dados
@@ -17,6 +14,6 @@ import br.com.fluig.clean.model.Carros;
  */
 
 @Repository
-public interface CarroRepository extends JpaRepository<Carros, Long> {
+public interface CarroRepository extends JpaRepository<Carro, Long> {
 
 }
