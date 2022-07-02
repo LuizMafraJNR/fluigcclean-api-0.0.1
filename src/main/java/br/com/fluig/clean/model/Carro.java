@@ -10,7 +10,7 @@ import com.fasterxml.jackson.annotation.JsonFormat;
 
 import lombok.Data;
 @Data
-@Entity()
+@Entity
 @Table(name = "carros")
 public class Carro {
 	@Id
